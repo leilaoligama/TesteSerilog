@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.5.33424.131
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SerilogAspNetCore3.1", "SerilogAspNetCore3.1\SerilogAspNetCore3.1.csproj", "{C8D605CF-9DD0-40F5-8BA0-F076EC1923F1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SerilogAspNetCore3.1", "SerilogAspNetCore3.1\SerilogAspNetCore3.1.csproj", "{C8D605CF-9DD0-40F5-8BA0-F076EC1923F1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SerilogAspNetCore5", "SerilogAspNetCore5\SerilogAspNetCore5.csproj", "{964F7F64-701A-47D3-8FB8-D96022B49D33}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{C8D605CF-9DD0-40F5-8BA0-F076EC1923F1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C8D605CF-9DD0-40F5-8BA0-F076EC1923F1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C8D605CF-9DD0-40F5-8BA0-F076EC1923F1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{964F7F64-701A-47D3-8FB8-D96022B49D33}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{964F7F64-701A-47D3-8FB8-D96022B49D33}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{964F7F64-701A-47D3-8FB8-D96022B49D33}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{964F7F64-701A-47D3-8FB8-D96022B49D33}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

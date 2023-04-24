@@ -8,15 +8,14 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace SerilogAspNetCore3._1
+namespace SerilogAspNetCore5
 {
     public class Program
     {
         public static void Main(string[] args)
         {
-
             var config = new ConfigurationBuilder()
-                .AddJsonFile("appsettings.json").Build();
+               .AddJsonFile("appsettings.json").Build();
 
             Log.Logger = new LoggerConfiguration()
                 .ReadFrom.Configuration(config).CreateLogger();
@@ -35,7 +34,6 @@ namespace SerilogAspNetCore3._1
             {
                 Log.CloseAndFlush();
             }
-
         }
 
         public static IHostBuilder CreateHostBuilder(string[] args) =>

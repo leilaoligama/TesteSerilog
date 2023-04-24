@@ -5,7 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace SerilogAspNetCore3._1.Controllers
+namespace SerilogAspNetCore5.Controllers
 {
     [ApiController]
     [Route("[controller]")]
@@ -35,14 +35,14 @@ namespace SerilogAspNetCore3._1.Controllers
             {
                 for (int i = 0; i < 5; i++)
                 {
-                    if (i == 3)
-                    {
-                        throw new Exception("Ocorreu um erro: i é igual a 3.");
-                    }
-                    else
-                    {
+                    //if (i == 3)
+                    //{
+                    //    throw new Exception("Ocorreu um erro: i é igual a 3.");
+                    //}
+                    //else
+                    //{
                         _logger.LogInformation($"Número de iterações {i}");
-                    }
+                    //}
                 }
                 _logger.LogInformation("entrou no TRY");
                 return Enumerable.Range(1, 5).Select(index => new WeatherForecast
@@ -52,7 +52,7 @@ namespace SerilogAspNetCore3._1.Controllers
                     Summary = Summaries[rng.Next(Summaries.Length)]
                 })
                 .ToArray();
-                
+
             }
             catch (Exception)
             {
